@@ -1,0 +1,122 @@
+[
+  {
+    "id": "TICKET-001",
+    "title": "Application slow down after midnight deployment",
+    "description": "Users are reporting significant lag and occasional timeouts when accessing the main dashboard since the last update deployed at 1:00 AM UTC.",
+    "customer": "Alpha Solutions",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-12-05T09:00:00Z",
+    "createdBy": "sarah.jones"
+  },
+  {
+    "id": "TICKET-002",
+    "title": "Request for new 'Export to CSV' feature",
+    "description": "The client needs the ability to export their monthly transaction log directly to a CSV file from the reporting page.",
+    "customer": "Beta Corp",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-12-05T10:30:00Z",
+    "createdBy": "mike.tyson"
+  },
+  {
+    "id": "TICKET-003",
+    "title": "Password reset link not arriving in email",
+    "description": "Multiple users from Delta Group cannot receive the password reset email. Checked spam folders; still missing.",
+    "customer": "Delta Group",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-12-05T11:45:00Z",
+    "createdBy": "support"
+  },
+  {
+    "id": "TICKET-004",
+    "title": "Minor typo correction on 'Contact Us' page",
+    "description": "The word 'recieved' is misspelled as 'recievd' on the main contact form submission success page.",
+    "customer": "Echo Logistics",
+    "priority": "Low",
+    "status": "Completed",
+    "createdAt": "2025-12-05T13:00:00Z",
+    "createdBy": "jason.reed"
+  },
+  {
+    "id": "TICKET-005",
+    "title": "Database connection failing intermittently",
+    "description": "System logs show periodic connection timeouts (Error 500) to the primary database, affecting data retrieval every few hours.",
+    "customer": "Gamma Industries",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-12-05T14:15:00Z",
+    "createdBy": "admin"
+  },
+  {
+    "id": "TICKET-006",
+    "title": "UI adjustment: Align button on settings page",
+    "description": "The 'Save Changes' button on the account settings page is misaligned by 5px to the left in Chrome browser.",
+    "customer": "Alpha Solutions",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "2025-12-05T15:30:00Z",
+    "createdBy": "david.lee"
+  },
+  {
+    "id": "TICKET-007",
+    "title": "Training session request for new features",
+    "description": "The client needs a dedicated 1-hour session to go over the recently implemented Q3 feature set.",
+    "customer": "Beta Corp",
+    "priority": "Medium",
+    "status": "Completed",
+    "createdAt": "2025-12-05T16:45:00Z",
+    "createdBy": "mike.tyson"
+  },
+  {
+    "id": "TICKET-008",
+    "title": "User cannot upload files larger than 5MB",
+    "description": "Upload functionality is failing for files exceeding 5MB, despite documentation stating the limit is 10MB.",
+    "customer": "Delta Group",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-12-05T18:00:00Z",
+    "createdBy": "anna.smith"
+  },
+  {
+    "id": "TICKET-009",
+    "title": "Feature enhancement: Add filtering to audit log",
+    "description": "Add filter options to the audit log (by user, date range, and action type) for easier searching.",
+    "customer": "Echo Logistics",
+    "priority": "Medium",
+    "status": "Backlog",
+    "createdAt": "2025-12-05T19:15:00Z",
+    "createdBy": "jason.reed"
+  },
+  {
+    "id": "TICKET-010",
+    "title": "System crash after attempting bulk delete operation",
+    "description": "Attempting to delete more than 100 records simultaneously results in a fatal application crash.",
+    "customer": "Gamma Industries",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-12-05T20:30:00Z",
+    "createdBy": "admin"
+  },
+  {
+    "id": "TICKET-011",
+    "title": "Incorrect calculation in monthly revenue report",
+    "description": "The 'Total Revenue' figure in the November report is off by approximately 2% compared to manual calculations.",
+    "customer": "Alpha Solutions",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-12-05T21:45:00Z",
+    "createdBy": "sarah.jones"
+  },
+  {
+    "id": "TICKET-012",
+    "title": "API documentation updates needed for v2.1",
+    "description": "The public-facing API documentation has not been updated to reflect the new endpoints introduced in version 2.1.",
+    "customer": "Beta Corp",
+    "priority": "Medium",
+    "status": "Backlog",
+    "createdAt": "2025-12-05T23:00:00Z",
+    "createdBy": "mike.tyson"
+  }
+]
