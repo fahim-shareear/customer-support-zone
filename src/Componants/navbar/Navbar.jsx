@@ -3,7 +3,7 @@ import React from 'react';
 const Navbar = () => {
     return (
       <div>
-        <div className="navbar w-8/12 mx-auto shadow-sm bg-white">
+        <div className="navbar w-9/12 mx-auto shadow-sm bg-white">
           <div className="navbar-start">
             <div className="dropdown">
               <ul
@@ -28,7 +28,7 @@ const Navbar = () => {
               <li><a>Download</a></li>
               <li><a>Contact</a></li>
             </ul>
-            <a className="btn bg-[linear-gradient(to_right,_#6e38e6,_#9f62f2)]"><span>+</span>New Ticket</a>
+            <a className="btn bg-[linear-gradient(to_right,_#6e38e6,_#9f62f2)] border-0"><span>+</span>New Ticket</a>
           </div>
         </div>
       </div>
