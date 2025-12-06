@@ -7,7 +7,7 @@ const Card = ({u}) => {
                 <div className="flex justify-between items-center">
                     <h1 className="text-black font-medium text-[12px]">{u.title}</h1>
                     <div className='flex justify-between items-center bg-green-600 rounded-[15px]'>
-                        <span className="w-[13px] h-[13px] rounded-full m-1 bg-green-400"></span>
+                        <span className="w-[13px] h-[13px] rounded-full ml-2 bg-green-400"></span>
                         <h3 className="text-black font-medium text-[13px] p-2">{u.status}</h3>
                     </div>
                 </div>
