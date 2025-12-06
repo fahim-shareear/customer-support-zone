@@ -7,7 +7,6 @@ const Mainbody = ({userPromise}) => {
     return (
       <div className="md:w-7/12 mx-auto border-2 border-red-500 flex gap-8 sm:w-full">
           <Bodycard user={userData}></Bodycard>
-        <div className="md:w-3/12 border-2 border-blue-500">right</div>
       </div>
     );
 };
