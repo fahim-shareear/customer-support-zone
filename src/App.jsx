@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navbar></Navbar>
-      <Suspense fallback={<span className="loading loading-infinity loading-xl"></span>}>
+      <Suspense fallback={<span className="loading loading-infinity loading-xl spinner"></span>}>
           <Mainbody userData={userData}></Mainbody>
       </Suspense>
     </>
