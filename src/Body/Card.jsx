@@ -2,8 +2,8 @@ import React from 'react';
 
 const Card = ({u}) => {
     return (
-        <div className="mb-1">
-            <div className="md:w-[400px] h-full bg-white p-2 rounded-sm shadow-md">
+        <div className="mb-1 shadow">
+            <div className="md:w-full h-full bg-white p-2 rounded-sm shadow-md">
                 <div className="flex justify-between items-center">
                     <h1 className="text-black font-medium text-[12px]">{u.title}</h1>
                     <div className='flex justify-between items-center bg-green-600 rounded-[15px]'>
