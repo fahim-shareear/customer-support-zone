@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Card = ({u}) => {
+const Card = ({u, handleClick}) => {
     return (
-        <div className="mb-1 shadow">
-            <div className="md:w-full h-full bg-white p-2 rounded-sm shadow-md">
+        <div className= "shadow" onClick={() => handleClick()}>
+            <div className="md:w-full h-full bg-white p-1 rounded-sm shadow-md">
                 <div className="flex justify-between items-center">
                     <h1 className="text-black font-medium text-[12px]">{u.title}</h1>
                     <div className='flex justify-between items-center bg-green-600 rounded-[15px]'>
@@ -12,7 +12,7 @@ const Card = ({u}) => {
                     </div>
                 </div>
                 <div className="mt-3">
-                    <h3 className="text-[13px] text-gray-500 font-medium">{u.description}</h3>
+                    <h3 className="text-[12px] text-gray-500 font-medium">{u.description}</h3>
                 </div>
                 <div className="flex justify-between items-center mt-2">
                     <div className="flex justify-between items-center gap-1">
