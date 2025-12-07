@@ -1,29 +1,19 @@
-import { Suspense, useState } from 'react';
-import './App.css'
-import Mainbody from './Componants/Mainbody/Mainbody';
-import Navbar from './Componants/navbar/Navbar';
+// src/App.jsx
+import './App.css';
+import Navbar from './Componants/Navbar';
 
-
-const fetchData = async () =>{
+const fetchData = async () => {
   const res = await fetch('/Data.json');
   return res.json();
 };
-
-const userData = fetchData();
-
+const ticketsPromise = fetchData();
 
 function App() {
-  const [getData, setGetData] = useState([]);
-  const [nextData, setNextData] = useState([]);
-
   return (
     <>
-      <Navbar setGetData={setGetData} userData={userData} getData={getData}></Navbar>
-      <Suspense fallback={<span className="loading loading-infinity loading-xl spinner"></span>}>
-          <Mainbody userData={userData} getData={getData} nextData={nextData} setNextData={setNextData} setGetData={setGetData}></Mainbody>
-      </Suspense>
+      <Navbar ticketsPromise={ticketsPromise} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

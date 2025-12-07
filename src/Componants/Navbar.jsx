@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({getData,userData}) => {
+const Navbar = () => {
     return (
       <div className='w-full '>
         <div className="navbar md:w-9/12 sm:w-full mx-auto  bg-white">
