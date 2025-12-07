@@ -35,18 +35,18 @@ const Navbar = () => {
                         <li><a>Contact</a></li>
                         </ul>
                      </div>
-                    <a className="btn text-white bg-gradient-to-r from-purple-700 to-purple-600 border-none hover:shadow-x1 transition transform hover:scale-105">+ New Ticket</a>
+                    <a className="btn text-white bg-linear-to-r from-purple-700 to-purple-600 border-none hover:shadow-x1 transition transform hover:scale-105">+ New Ticket</a>
                 </div>
             </div>
             </div>
             {/*banner section*/}
             <div className="sticky top-50">
                 <div className="md:max-w-[75%] mx-auto p-3 grid md:grid-cols-2 gap-3">
-                    <div className="md:max-w-[600px] sm:max-w-auto rounded-xl shadow-xl h-[260px] m-5  bg-gradient-to-r from-purple-700 to-purple-600 text-center flex items-center flex-col gap-3 justify-center ml-15">
+                    <div className="md:max-w-[600px] sm:max-w-auto rounded-xl shadow-xl h-[260px] m-5  bg-linear-to-r from-purple-700 to-purple-600 text-center flex items-center flex-col gap-3 justify-center ml-15">
                         <h1 className="text-2xl">In Progress</h1>
                         <h1 className="text-6xl">0</h1>
                     </div>
-                    <div className="md:max-w-[600px] sm:max-w-auto rounded-xl shadow-xl h-[260px] m-5  bg-gradient-to-r from-green-400 to-green-700 text-center flex items-center flex-col gap-3 justify-center">
+                    <div className="md:max-w-[600px] sm:max-w-auto rounded-xl shadow-xl h-[260px] m-5  bg-linear-to-r from-green-400 to-green-700 text-center flex items-center flex-col gap-3 justify-center">
                         <h1 className="text-2xl">Resolved</h1>
                         <h1 className="text-6xl">0</h1>
                     </div>

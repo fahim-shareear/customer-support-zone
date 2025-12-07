@@ -6,7 +6,7 @@ const Bodycards = ({data}) => {
             <div className="flex justify-between items-center">
                 <h1 className="text-[12px] text-black font-medium p-1">{data.title}</h1>
                 <div className="flex items-center bg-green-300 rounded-[15px] mr-1 mt-1">
-                    <span className="w-[10px] h-[10px] rounded-full bg-green-500 ml-1"></span>
+                    <span className="w-2.5 h-2.5 rounded-full bg-green-500 ml-1"></span>
                     <p className="text-[10px] text-green-700 p-1 mr-1">{data.status}</p>
                 </div>
             </div>

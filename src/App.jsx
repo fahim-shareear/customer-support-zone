@@ -10,6 +10,8 @@ const fetchTicket = async () =>{
 
 const ticketPromise = fetchTicket();
 
+
+
 const App = () => {
   return (
     <>
