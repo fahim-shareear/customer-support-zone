@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Bodycards = ({u}) => {
-    
+
     const handleClick = () =>{
         console.log("Clicked")
     }
@@ -23,7 +23,7 @@ const Bodycards = ({u}) => {
                     </div>
                     <div className="flex justify-between items-center">
                         <div className="flex justify-between items-center gap-5 p-2">
-                            <h3 className="text-black font-bold">{u.id}</h3>
+                            <h3 className="text-gray-400 font-medium text[10px]">{u.id}</h3>
                             <h3 className="text-black font-bold uppercase">{u.priority}</h3>
                         </div>
                         <div className="flex justify-between items-center gap-5 p-2">
