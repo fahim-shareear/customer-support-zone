@@ -1,6 +1,5 @@
 const Pendingtasks = ({user}) => {
     // const userTask = use(user);
-    console.log(user)
     return (
         <div className="bg-white m-2 p-2 rounded-md">
             <h1 className="text-[13px] text-black">{user.title}</h1>
