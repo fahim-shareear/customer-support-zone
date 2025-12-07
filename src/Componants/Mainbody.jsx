@@ -15,7 +15,7 @@ const Mainbody = ({ticketPromise}) => {
                     </div>
                 </div>
                 <div className="border-2 col-span-4 border-yellow-500 bg-green-500 h-full">
-
+                    
                 </div>
             </div>
         </div>
