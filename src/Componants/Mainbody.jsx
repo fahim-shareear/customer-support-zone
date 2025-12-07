@@ -3,7 +3,7 @@ import Bodycards from './Bodycards';
 import Pendingtasks from './Pendingtasks';
 import Resolvedtask from './Resolvedtask';
 
-const Mainbody = ({ ticketPromise, handleClick }) => {
+const Mainbody = ({ ticketPromise, handleClick, progressCard}) => {
   const getData = use(ticketPromise);
 
   return (
@@ -15,7 +15,7 @@ const Mainbody = ({ ticketPromise, handleClick }) => {
           <h1 className="text-black font-bold ml-1">Customer Tickets</h1>
           <div className="ml-2 grid md:grid-cols-2 gap-2 sm:grid-cols-1 p-4">
             {getData.map(data => (
-              <Bodycards data={data} key={data.id} handleClick={handleClick} />
+              <Bodycards data={data} key={data.id} handleClick={handleClick} progressCard={progressCard}/>
             ))}
           </div>
         </div>

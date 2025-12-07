@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Bodycards = ({data, handleClick}) => {
+    const [clicked, setClicked] = useState(false)
+    const handleCardClick = () =>{
+        handleClick();
+        setClicked(true);
+    };
     
     return (
-        <div className=" max-h-[200px] bg-white rounded-md shadow-xl hover:scale-50 transition-all transform cursor-pointer" onClick={() => {handleClick()}}>
+        <div className={` max-h-[200px] bg-white rounded-md shadow-xl ${clicked? "hover:scale-50" : ""} transition-all transform cursor-pointer`} onClick={() => {handleCardClick()}}>
             <div className="flex justify-between items-center">
                 <h1 className="text-[12px] text-black font-medium p-1">{data.title}</h1>
                 <div className="flex items-center bg-green-300 rounded-[15px] mr-1 mt-1">
