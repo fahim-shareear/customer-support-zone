@@ -2,7 +2,7 @@ import React from 'react';
 
 const Bodycards = ({data}) => {
     return (
-        <div className="max-w-[450px] max-h-[200px] bg-white rounded-md shadow-xl hover:scale-50 transition-all transform cursor-pointer">
+        <div className=" max-h-[200px] bg-white rounded-md shadow-xl hover:scale-50 transition-all transform cursor-pointer">
             <div className="flex justify-between items-center">
                 <h1 className="text-[12px] text-black font-medium p-1">{data.title}</h1>
                 <div className="flex items-center bg-green-300 rounded-[15px] mr-1 mt-1">
