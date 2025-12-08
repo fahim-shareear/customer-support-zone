@@ -29,11 +29,10 @@ const App = () => {
 
   return (
     <>
-      <Navbar countProgress={countProgress} resolvedCount={resolvedCount}/>
-      <Suspense
-        fallback={
+    <Suspense fallback={
           <span className="loading loading-infinity loading-xl mx-auto absolute top-[50%] left-[50%] transform translate-y-[-50%, -50%] w-[100px] h-[100px]"></span>
         }>
+      <Navbar countProgress={countProgress} resolvedCount={resolvedCount}/>
         <Mainbody
           ticketPromise={ticketPromise}
           handleClick={handleClick}
@@ -43,9 +42,9 @@ const App = () => {
           resolvedCount={resolvedCount}
           setResolvedCount={setResolvedCount}
         />
-      </Suspense>
       <Footer></Footer>
       <ToastContainer />
+    </Suspense>
     </>
   );
 };
