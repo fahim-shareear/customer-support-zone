@@ -4,7 +4,7 @@ import vector2 from '../Assets/vector2.png';
 
 const Navbar = ({ countProgress, resolvedCount }) => {
   return (
-    <div>
+    <div className="nav-main">
       <div className="bg-white">
         <div className="navbar max-w-[75%] mx-auto bg-white">
           <div className="navbar-start">

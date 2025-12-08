@@ -35,7 +35,7 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
   };
 
   return (
-        <div className="mx-auto">
+        <div className="mx-auto main-container">
           <div className="grid grid-cols-12 mx-auto items-center">
             <div className="col-span-8">
               <h1 className="text-black font-bold ml-1 sm:m-3">Customer Tickets</h1>
