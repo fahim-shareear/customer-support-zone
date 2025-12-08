@@ -2,6 +2,7 @@ import React, { use, useState } from 'react';
 import Bodycards from './Bodycards';
 import Pendingtasks from './Pendingtasks';
 import Resolvedtask from './Resolvedtask';
+import { toast } from 'react-toastify';
 
 const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, setResolvedCount}) => {
   const getData = use(ticketPromise);
@@ -15,6 +16,7 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
   const handleTaskAdd = (task) => {
     if (!pendingTasks.find(t => t.id === task.id) && !resolvedTasks.find(t => t.id === task.id)) {
       setPendingTasks(prev => [...prev, task]);
+      toast("Added to the pending list")
     }
   };
 

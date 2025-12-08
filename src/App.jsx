@@ -2,6 +2,7 @@ import React, { Suspense, useState } from 'react';
 import Navbar from './Componants/Navbar';
 import Mainbody from './Componants/Mainbody';
 import Footer from './Componants/Footer';
+import { ToastContainer, toast } from 'react-toastify';
 
 const fetchTicket = async () => {
   const res = await fetch('/Data.json');
@@ -23,6 +24,7 @@ const App = () => {
 
   const handleDecrease = () =>{
     setCountProgress(prev => (prev > 0 ? prev - 1 : 0) )
+    toast("Issue Resolved")
   }
 
   return (
@@ -43,6 +45,7 @@ const App = () => {
         />
       </Suspense>
       <Footer></Footer>
+      <ToastContainer />
     </>
   );
 };
