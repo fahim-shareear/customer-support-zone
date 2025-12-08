@@ -1,6 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import Navbar from './Componants/Navbar';
 import Mainbody from './Componants/Mainbody';
+import Footer from './Componants/Footer';
 
 const fetchTicket = async () => {
   const res = await fetch('/Data.json');
@@ -41,6 +42,7 @@ const App = () => {
           setResolvedCount={setResolvedCount}
         />
       </Suspense>
+      <Footer></Footer>
     </>
   );
 };
