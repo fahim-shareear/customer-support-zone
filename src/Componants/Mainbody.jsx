@@ -3,8 +3,11 @@ import Bodycards from './Bodycards';
 import Pendingtasks from './Pendingtasks';
 import Resolvedtask from './Resolvedtask';
 
-const Mainbody = ({ ticketPromise, handleClick, progressCard }) => {
+const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, setResolvedCount}) => {
   const getData = use(ticketPromise);
+  const handleResolvedCount = () =>{
+    setResolvedCount(prev => prev + 1);
+  };
 
   const [pendingTasks, setPendingTasks] = useState([]);
   const [resolvedTasks, setResolvedTasks] = useState([]);
@@ -18,6 +21,7 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard }) => {
   const handleCompleteTask = (task) => {
     setPendingTasks(prev => prev.filter(t => t.id !== task.id));
     setResolvedTasks(prev => [...prev, task]);
+    handleDecrease();
   };
 
   return (
@@ -51,6 +55,7 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard }) => {
                     user={task} 
                     key={task.id} 
                     onComplete={() => handleCompleteTask(task)}
+                    handleResolvedCount={handleResolvedCount}
                   />
                 ))
               )}

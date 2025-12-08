@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({ countProgress }) => {
+const Navbar = ({ countProgress, resolvedCount }) => {
   return (
     <div>
       <div className="bg-white">
@@ -57,7 +57,7 @@ const Navbar = ({ countProgress }) => {
 
           <div className="md:max-w-[600px] sm:max-w-auto rounded-xl shadow-xl h-[260px] m-5 bg-linear-to-r from-green-400 to-green-700 text-center flex items-center flex-col gap-3 justify-center">
             <h1 className="text-2xl">Resolved</h1>
-            <h1 className="text-6xl">0</h1>
+            <h1 className="text-6xl">{resolvedCount}</h1>
           </div>
 
         </div>
