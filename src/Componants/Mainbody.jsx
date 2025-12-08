@@ -35,10 +35,10 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
   };
 
   return (
-        <div className="max-w-[60%] mx-auto">
+        <div className="mx-auto">
           <div className="grid grid-cols-12 mx-auto items-center">
             <div className="col-span-8">
-              <h1 className="text-black font-bold ml-1">Customer Tickets</h1>
+              <h1 className="text-black font-bold ml-1 sm:m-3">Customer Tickets</h1>
               <div className="ml-2 grid md:grid-cols-2 gap-2 sm:grid-cols-1 p-4">
                 {cards.map(data => (
                   <Bodycards 
