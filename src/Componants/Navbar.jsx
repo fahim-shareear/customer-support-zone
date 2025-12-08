@@ -1,4 +1,6 @@
 import React from 'react';
+import vector1 from '../Assets/vector1.png';
+import vector2 from '../Assets/vector2.png';
 
 const Navbar = ({ countProgress, resolvedCount }) => {
   return (
@@ -49,16 +51,31 @@ const Navbar = ({ countProgress, resolvedCount }) => {
       {/* Banner Section */}
       <div className="top-50">
         <div className="md:max-w-[75%] mx-auto p-3 grid md:grid-cols-2 gap-3">
+
+          <div className="left flex items-center justify-between md:max-w-[600px] sm:max-w-full rounded-xl shadow-xl h-[260px] md:m-5 bg-linear-to-r from-purple-900 to-purple-600 md:ml-15">
+              <img src={vector1} alt="" className="h-full w-[210px]"/>
+              <div className="h-auto text-center ">
+                <h1 className="text-2xl">In Progress</h1>
+                <h1 className="text-6xl mx-auto">{countProgress}</h1>
+              </div>
+              <img src={vector2} alt="" className="h-full w-[210px] -rotate-y-180"/>
+          </div>
           
-          <div className="left md:max-w-[600px] sm:max-w-full rounded-xl shadow-xl h-[260px] md:m-5 bg-linear-to-r from-purple-900 to-purple-600 text-center flex items-center flex-col gap-3 justify-center md:ml-15">
-            <h1 className="text-2xl">In Progress</h1>
-            <h1 className="text-6xl">{countProgress}</h1>
+          <div className="left flex items-center justify-between md:max-w-[600px] sm:max-w-full rounded-xl shadow-xl h-[260px] md:m-5 bg-linear-to-r from-green-400 to-green-700 md:ml-15">
+              <img src={vector1} alt="" className="h-full w-[210px]"/>
+              <div className="h-auto text-center ">
+                <h1 className="text-2xl">Resolved</h1>
+                <h1 className="text-6xl mx-auto">{resolvedCount}</h1>
+              </div>
+              <img src={vector2} alt="" className="h-full w-[210px] -rotate-y-180"/>
           </div>
 
-          <div className="right md:max-w-[600px] sm:w-full rounded-xl shadow-xl h-[260px] md:m-5 bg-linear-to-r from-green-400 to-green-700 text-center flex items-center flex-col gap-3 justify-center">
-            <h1 className="text-2xl">Resolved</h1>
-            <h1 className="text-6xl">{resolvedCount}</h1>
-          </div>
+          {/* <div className="right md:max-w-[600px] sm:w-full rounded-xl shadow-xl h-[260px] md:m-5  text-center flex items-center flex-col gap-3 justify-center">
+            <div>
+              <h1 className="text-2xl">Resolved</h1>
+              <h1 className="text-6xl">{}</h1>
+            </div>
+          </div> */}
 
         </div>
       </div>
