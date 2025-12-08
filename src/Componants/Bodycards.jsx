@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
-const Bodycards = ({data, handleClick}) => {
+const Bodycards = ({data, handleClick, handleTaskAdd}) => {
     const [clicked, setClicked] = useState(false)
     const handleCardClick = () =>{
         handleClick();
+        handleTaskAdd(data);
         setClicked(true);
     };
     
