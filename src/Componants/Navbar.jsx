@@ -61,7 +61,7 @@ const Navbar = ({ countProgress, resolvedCount }) => {
               <img src={vector2} alt="" className="h-full w-[210px] -rotate-y-180"/>
           </div>
           
-          <div className="left flex items-center justify-between md:max-w-[600px] sm:max-w-full rounded-xl shadow-xl h-[260px] md:m-5 bg-linear-to-r from-green-400 to-green-700 md:ml-15">
+          <div className="left flex items-center justify-between md:max-w-[600px] sm:max-w-full rounded-xl shadow-xl h-[260px] md:m-5 bg-linear-to-r from-green-500 to-green-700 md:ml-15">
               <img src={vector1} alt="" className="h-full w-[210px]"/>
               <div className="h-auto text-center ">
                 <h1 className="text-2xl">Resolved</h1>
