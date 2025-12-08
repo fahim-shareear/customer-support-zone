@@ -10,6 +10,7 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
     setResolvedCount(prev => prev + 1);
   };
 
+  const [cards, setCards] = useState(getData);
   const [pendingTasks, setPendingTasks] = useState([]);
   const [resolvedTasks, setResolvedTasks] = useState([]);
 
@@ -20,10 +21,17 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
     }
   };
 
+  const handleCardClick = (task) => {
+    handleClick();
+    handleTaskAdd(task);
+    setCards(prev => prev.filter(c => c.id !== task.id));
+  };
+
   const handleCompleteTask = (task) => {
     setPendingTasks(prev => prev.filter(t => t.id !== task.id));
     setResolvedTasks(prev => [...prev, task]);
     handleDecrease();
+    handleResolvedCount();
   };
 
   return (
@@ -33,11 +41,11 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
         <div className="col-span-8">
           <h1 className="text-black font-bold ml-1">Customer Tickets</h1>
           <div className="ml-2 grid md:grid-cols-2 gap-2 sm:grid-cols-1 p-4">
-            {getData.map(data => (
+            {cards.map(data => (
               <Bodycards 
                 data={data} 
                 key={data.id} 
-                handleClick={handleClick} 
+                handleClick={() => handleCardClick(data)} 
                 progressCard={progressCard} 
                 handleTaskAdd={handleTaskAdd}
               />
@@ -57,7 +65,6 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
                     user={task} 
                     key={task.id} 
                     onComplete={() => handleCompleteTask(task)}
-                    handleResolvedCount={handleResolvedCount}
                   />
                 ))
               )}

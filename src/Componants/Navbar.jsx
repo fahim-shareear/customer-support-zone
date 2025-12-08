@@ -25,7 +25,7 @@ const Navbar = ({ countProgress, resolvedCount }) => {
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a className="text-black text-xl">CS — Ticket System</a>
+            <a className="text-black text-xl font-bold">CS — Ticket System</a>
           </div>
 
           <div className="navbar-end">
