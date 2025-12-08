@@ -35,58 +35,57 @@ const Mainbody = ({ ticketPromise, handleClick, progressCard, handleDecrease, se
   };
 
   return (
-    <div className="max-w-[60%] mx-auto">
-      <div className="grid grid-cols-12 mx-auto items-center">
-
-        <div className="col-span-8">
-          <h1 className="text-black font-bold ml-1">Customer Tickets</h1>
-          <div className="ml-2 grid md:grid-cols-2 gap-2 sm:grid-cols-1 p-4">
-            {cards.map(data => (
-              <Bodycards 
-                data={data} 
-                key={data.id} 
-                handleClick={() => handleCardClick(data)} 
-                progressCard={progressCard} 
-                handleTaskAdd={handleTaskAdd}
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="col-span-4 h-full flex flex-col justify-start gap-4">
-          <div className="mx-auto rounded-xl w-[95%] md:h-[95%] sm:h-full sd:w-[100%] mt-2">
-            <h1 className="text-black font-bold">Task Status</h1>
-            <div className="w-[90%] h-[350px] ml-5 rounded-xl shadow-md overflow-auto">
-              {pendingTasks.length === 0 ? (
-                <p className="text-gray-400 p-2">No tasks in progress</p>
-              ) : (
-                pendingTasks.map(task => (
-                  <Pendingtasks 
-                    user={task} 
-                    key={task.id} 
-                    onComplete={() => handleCompleteTask(task)}
+        <div className="max-w-[60%] mx-auto">
+          <div className="grid grid-cols-12 mx-auto items-center">
+            <div className="col-span-8">
+              <h1 className="text-black font-bold ml-1">Customer Tickets</h1>
+              <div className="ml-2 grid md:grid-cols-2 gap-2 sm:grid-cols-1 p-4">
+                {cards.map(data => (
+                  <Bodycards 
+                    data={data} 
+                    key={data.id} 
+                    handleClick={() => handleCardClick(data)} 
+                    progressCard={progressCard} 
+                    handleTaskAdd={handleTaskAdd}
                   />
-                ))
-              )}
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div className="mx-auto rounded-xl w-[95%] md:h-[95%] sm:h-full sd:w-[100%] mt-2">
-            <h1 className="text-black font-bold">Resolved Status</h1>
-            <div className="w-[90%] h-[350px] ml-5 rounded-xl shadow-md overflow-auto">
-              {resolvedTasks.length === 0 ? (
-                <p className="text-gray-400 p-2">No tasks resolved yet</p>
-              ) : (
-                resolvedTasks.map(task => (
-                  <Resolvedtask key={task.id} user={task} />
-                ))
-              )}
+            <div className="col-span-4 h-full flex flex-col justify-start gap-4">
+              <div className="mx-auto rounded-xl w-[95%] md:h-[95%] sm:h-full sd:w-[100%] mt-2">
+                <h1 className="text-black font-bold">Task Status</h1>
+                <div className="w-[90%] h-[350px] ml-5 rounded-xl shadow-md overflow-auto">
+                  {pendingTasks.length === 0 ? (
+                    <p className="text-gray-400 p-2">No tasks in progress</p>
+                  ) : (
+                    pendingTasks.map(task => (
+                      <Pendingtasks 
+                        user={task} 
+                        key={task.id} 
+                        onComplete={() => handleCompleteTask(task)}
+                      />
+                    ))
+                  )}
+                </div>
+              </div>
+
+              <div className="mx-auto rounded-xl w-[95%] md:h-[95%] sm:h-full sd:w-[100%] mt-2">
+                <h1 className="text-black font-bold">Resolved Status</h1>
+                <div className="w-[90%] h-[350px] ml-5 rounded-xl shadow-md overflow-auto">
+                  {resolvedTasks.length === 0 ? (
+                    <p className="text-gray-400 p-2">No tasks resolved yet</p>
+                  ) : (
+                    resolvedTasks.map(task => (
+                      <Resolvedtask key={task.id} user={task} />
+                    ))
+                  )}
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
-
-      </div>
-    </div>
   );
 };
 
